@@ -20,14 +20,22 @@ An offline-first daily focus app designed to help you stay productive without di
 
 ## Getting Started
 
-### Prerequisites
+### Installation
 
+#### Option 1: Download APK (Recommended)
+
+1. Download the latest APK from the [Releases](https://github.com/Joel-Shibu/dayly/releases) page
+2. Enable "Install from unknown sources" in your Android settings
+3. Install the APK and enjoy the app!
+
+#### Option 2: Build from Source (Developers)
+
+**Prerequisites:**
 - Flutter SDK (>= 3.0)
 - Android SDK for development
 - Physical Android device for testing reminders
 
-### Installation
-
+**Steps:**
 1. Clone the repository:
 ```bash
 git clone https://github.com/Joel-Shibu/dayly.git
