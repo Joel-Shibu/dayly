@@ -1,17 +1,72 @@
-# dayly
+# Dayly
 
-A new Flutter project.
+An offline-first daily focus app designed to help you stay productive without distractions.
+
+## Features
+
+- **Offline-First**: Works completely offline with local data storage
+- **Daily Focus**: Track and complete daily tasks with focus mode
+- **Reliable Reminders**: Native Android alarm integration for dependable notifications
+- **No Accounts**: No login required - your data stays on your device
+- **No Tracking**: Privacy-focused with no analytics or cloud sync
+- **Clean UI**: Minimal Material Design 3 interface
+
+## Tech Stack
+
+- **Flutter**: Cross-platform mobile app framework
+- **Riverpod**: State management
+- **Hive**: Local NoSQL database for offline storage
+- **Native Android**: Reliable reminder system with foreground services
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK (>= 3.0)
+- Android SDK for development
+- Physical Android device for testing reminders
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+```bash
+git clone https://github.com/Joel-Shibu/dayly.git
+cd dayly
+```
+
+2. Install dependencies:
+```bash
+flutter pub get
+```
+
+3. Run the app:
+```bash
+flutter run
+```
+
+### Building for Release
+
+```bash
+flutter build apk --release
+```
+
+The APK will be generated at `build/app/outputs/flutter-apk/app-release.apk`.
+
+## App Architecture
+
+- **Features**: Modular feature-based organization
+- **State Management**: Riverpod providers for reactive state
+- **Data Models**: Hive-adapted models with code generation
+- **Services**: Background notification and reminder handling
+- **Native Integration**: Android-specific alarm and notification services
+
+## Privacy & Data
+
+- All data stored locally using Hive database
+- No network requests or cloud synchronization
+- No user analytics or tracking
+- Full control over your data
+
+## License
+
+This project is open source and available under the MIT License.
